@@ -5,11 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registration01.html</title>
 <script> 
+	
     //재입력한 아이디를 부모창으로 전송한다.
     function idUse(){
         //opener속성을 통해 부모창의 DOM을 선택할 수 있다. 
-        opener.document.myform.id.value = document.overlapFrm.retype_id.value;
-        self.close();
+       //사용가능한 아이디를 부모창으로 전송한다.
+       opener.document.myform.id.value = document.overlapFrm.retype_id.value; 
+       //팝업창을 닫는다.
+       self.close();
     }
 </script>
 </head>
