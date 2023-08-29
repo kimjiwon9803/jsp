@@ -13,11 +13,14 @@ request영역은 공유되지 않는다. 절대경로 사용시 컨텍스트루�
 -->
 	<!-- request영역에 변수를 저장한다.  -->
     <c:set var="requestVar" value="MustHave" scope="request" />
-    <!-- 페이지 이동시 파라미터를 전달한다.  -->
+    <!-- 페이지 이동시 파라미터를 전달한다. 
+    주소줄에 쿼리스트링으로 표시된다.
+     -->
     <c:redirect url="/11JSTL/inc/OtherPage.jsp">
         <c:param name="user_param1" value="출판사" />
         <c:param name="user_param2" value="골든래빗" />
-    </c:redirect>
+    </c:redirect> 
+   
     
     
     <!--  
@@ -26,13 +29,13 @@ request영역은 공유되지 않는다. 절대경로 사용시 컨텍스트루�
     URLEncode 클래스를 통해 인코딩 처리를 해줘야한다. 
     -->
     <h4>JSP 내장객체를 통한 페이지 이동</h4>
-    <%--
+  <%--   <%
     String p1 = URLEncoder.encode("더조은");
     String p2 = URLEncoder.encode("종각지점");
     
     response.sendRedirect(request.getContextPath()
     	+"/11JSTL/inc/OtherPage.jsp?user_param1="+p1+"&user_param2="+p2);
-    --%>    
+    %>     --%>
 </body>
 </html>
 

@@ -45,9 +45,9 @@ url속성에 절대경로로 지정할 경우 컨텍스트 루트명은 포함�
    		<h4>이미지 삽입하기</h4>
    		<!-- 상대경로 삽입하기-->
    		<img src="../../images/disk.png" width="100"/>
-   		<!-- 상대경로 삽입하기 -->
+   		<!-- 절대경로 삽입하기 (하드코딩으로 기술) -->
    		<img src="/JSPStudy/images/disk.png" width="100"/>
-   		<!-- 컨텍스트 루트명을 가져온 후 절대경로로 삽입하기-->
+   		<!-- 컨텍스트 루트명을 가져온 후 절대경로로 삽입하기 (내장객체 사용)-->
    		<img src="<%=request.getContextPath() %>/images/disk.png" width="100"/>
    	</div>        
     

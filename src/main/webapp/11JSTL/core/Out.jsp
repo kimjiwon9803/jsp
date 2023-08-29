@@ -8,7 +8,7 @@
 out 태그
 : 영역에 저장된 변수를 출력할때 사용한다. 
 escapeXml속성이 true이면 HTML 태그가 그대로 출력된다. 
-innerText()와 동일하다. 
+innerText와 동일하다. 
 -->
 	<!-- <i> 태그가 포함된 문자열로 변수를 생성한다.  -->
     <c:set var="iTag">
