@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>LifeCycle.jsp</title>
 </head>
 <body>
- <script>
+    <script>
     /* Javascript에서 전송방식을 부여한 후 서버로 요청한다. 
     submit()함수가 호출되면 폼값이 전송된다. */
     function requestAction(frm, met) {
@@ -33,6 +33,7 @@
         <input type="button" value="Post 방식 요청하기" 
         	onclick="requestAction(this.form, 2);" />
     </form>
-
 </body>
 </html>
+
+

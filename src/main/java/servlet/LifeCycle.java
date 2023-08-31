@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+//어노테이션을 통한 매핑 처리
 @WebServlet("/12Servlet/LifeCycle.do")
 public class LifeCycle extends HttpServlet {
 
